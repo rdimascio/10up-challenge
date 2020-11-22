@@ -1,6 +1,7 @@
 .hero {
+    overflow: hidden;
+
     &-wrapper {
-        padding-top: 120px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -11,20 +12,20 @@
     &-content-wrapper,
     &-image-wrapper {
         flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
     }
 
     &-content {
-        // h1 {
-
-        // }
+        &-wrapper {
+            padding-left: 80px;
+        }
 
         .title-prefix {
             font-size: 12px;
             color: #00ee9a;
+        }
+
+        h1 {
+
         }
     }
 
@@ -40,5 +41,13 @@
                 color: #FFF;
             }
         }
+    }
+
+    &-image {
+        &-wrapper {
+            margin-bottom: -30px;
+        }
+
+        background-image: url('../assets/images/Device_Ipad.png');
     }
 }
