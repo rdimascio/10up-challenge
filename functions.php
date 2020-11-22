@@ -19,7 +19,7 @@ add_action( 'after_setup_theme', 'theme_setup' );
 
 if ( ! function_exists( 'asset_setup' ) ) :
     function asset_setup() {
-        wp_enqueue_style( '10up-css', get_stylesheet_directory_uri() . '/style.css', false, null );
+        wp_enqueue_style( '10up-css', get_stylesheet_directory_uri() . '/dist/main.css', false, null );
     }
     add_action( 'wp_enqueue_scripts', 'asset_setup', 100 );
 endif;
