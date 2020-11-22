@@ -1,0 +1,17 @@
+{
+  "name": "10up",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass -w src/sass/main.scss style.css",
+    "build": "node-sass src/sass/main.scss style.css --output-style compressed --source-map style.css.map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
