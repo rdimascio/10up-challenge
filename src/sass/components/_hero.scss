@@ -3,21 +3,46 @@
 
     &-wrapper {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         color: $light;
         background-image: linear-gradient($hero-gradient-start, $hero-gradient-end);
+
+        @media only screen and (min-width: 870px) {
+            flex-direction: row;
+        }
     }
 
     &-content {
         flex: 1;
-        padding-left: $gutter-width;
+        width: 100%;
+        padding-left: 0;
+
+        @media only screen and (min-width: 520px) {
+            width: 70%;
+        }
+
+        @media only screen and (min-width: 960px) {
+            width: 50%;
+        }
+
+        @media only screen and (min-width: 1120px) {
+            padding-left: $gutter-width;
+        }
 
         &-wrapper {
-            padding-top: $header-height + $gutter-height;
+            padding-top: $header-height + ($gutter-height * 2);
             padding-right: $gutter-width;
-            padding-bottom: $gutter-height * 2;
-            padding-left: $gutter-width * 2;
+            padding-bottom: 0;
+            padding-left: $gutter-width;
+
+            @media only screen and (min-width: 870px) {
+                padding-top: $header-height + $gutter-height;
+                padding-right: $gutter-width;
+                padding-bottom: $gutter-height * 2;
+                padding-left: $gutter-width * 2;
+            }
         }
 
         small {
@@ -26,21 +51,65 @@
 
         p {
             margin-bottom: 2.5rem;
+            max-width: 100%;
+            
+            @media only screen and (min-width: 870px) {
+                max-width: 460px;
+            }
         }
     }
 
     &-buttons {
-        a:not(.primary) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media only screen and (min-width: 520px) {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        a.secondary {
             padding: 10px 0;
+            margin-top: 20px; 
+
+            @media only screen and (min-width: 520px) {
+                margin-top: 0; 
+            }
         }
     }
 
     &-image {
-        flex: 1;
-        padding-right: $gutter-width;
+        flex: 0;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+
+        @media only screen and (min-width: 870px) {
+            width: 30%;
+            padding-right: $gutter-width;
+        }
+
+        @media only screen and (min-width: 960px) {
+            flex: 1;
+            width: 50%;
+        }
 
         img {
-            margin-bottom: -60px;
+            margin-bottom: -200px;
+            max-height: 600px;
+
+            @media only screen and (min-width: 520px) {
+                margin-bottom: -60px;
+            }
+
+            @media only screen and (min-width: 870px) {
+                max-height: 100%;
+            }
+
+            @media only screen and (min-width: 870px) {
+                max-height: 100%;
+            }
         }
     }
 }

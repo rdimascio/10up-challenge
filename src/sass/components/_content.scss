@@ -9,11 +9,17 @@
 
     &-image {
         flex: 1;
+        width: 50%;
         text-align: center;
+
+        img {
+            width: 100%;
+        }
     }
 
     &-body {
         flex: 1;
+        width: 50%;
         padding: $gutter-height $gutter-width $gutter-width $gutter-width * 2;
 
         small {

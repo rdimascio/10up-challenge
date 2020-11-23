@@ -1,5 +1,8 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1, h2 {
-    font-family: 'Montserrat', monospace;
     font-weight: 700;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -8,7 +11,11 @@ h1, h2 {
 h1 {
     font-size: $hero-heading-mobile;
 
-    @media only screen and (min-width: 1269px) {
+    @media only screen and (min-width: 520px) {
+        font-size: $hero-heading-tablet;
+    }
+
+    @media only screen and (min-width: 1270px) {
         font-size: $hero-heading;
     }
 }
@@ -16,7 +23,11 @@ h1 {
 h2 {
     font-size: $content-heading-mobile;
 
-    @media only screen and (min-width: 1269px) {
+    @media only screen and (min-width: 520px) {
+        font-size: $content-heading-tablet;
+    }
+
+    @media only screen and (min-width: 1270px) {
         font-size: $content-heading;
     }
 }
@@ -29,19 +40,23 @@ p {
 }
 
 p, a {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: $content-mobile;
     letter-spacing: .5px;
     line-height: 2;
 
-    @media only screen and (min-width: 1269px) {
+
+    @media only screen and (min-width: 520px) {
+        font-size: $content-tablet;
+    }
+
+    @media only screen and (min-width: 1270px) {
         font-size: $content;
     }
 }
 
 small {
-    font-family: 'Cousine', sans-serif;
+    font-family: 'Cousine', monospace;
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 10px;
