@@ -28,42 +28,6 @@ p, a {
     line-height: 2;
 }
 
-a {
-    padding: 10px 0;
-    text-decoration: none;
-    border-bottom: 1px solid;
-
-    &.btn {
-        padding: 15px 30px;
-        border: 1px solid;
-        border-radius: 50px;
-    }
-    
-    &.light {
-        color: $light;
-        border-color: $light;
-    }
-
-    &.dark {
-        color: $dark;
-        border-color: $dark;
-    }
-
-    &:hover,
-    &:active,
-    &:visited {
-        text-decoration: none;
-        
-        &.light {
-            color: $light;
-        }
-
-        &.dark {
-            color: $dark;
-        }
-    }
-}
-
 small {
     font-family: 'Cousine', sans-serif;
     font-weight: 700;
