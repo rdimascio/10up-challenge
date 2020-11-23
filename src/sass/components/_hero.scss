@@ -30,19 +30,16 @@
     }
 
     &-buttons {
-        
+        a:not(.primary) {
+            padding: 10px 0;
+        }
     }
 
     &-image {
         flex: 1;
         padding-right: $gutter-width;
-        
-        &-wrapper {
-
-        }
 
         &-image {
-            background-image: url('../assets/images/Device_Ipad.png');
             background-size: cover;
             background-repeat: no-repeat;
             padding-bottom: 115%;

@@ -1,5 +1,5 @@
 <?php
-
+    // Hero section
 ?>
 
 <div class="hero">
@@ -10,15 +10,16 @@
                 <h1 class="mt-10">Engage brand and increase viewability.</h1>
                 <p>Maecenas finibus urna a accumsan dapibus. Donec lobortis, neque vel vehicula dictum.</p>
                 <div class="hero-buttons">
-                    <a class="btn light" href="/">Download Now</a>
-                    <a class="light ml-20" href="/">Learn More</a>
+                    <a href="#" rel="noopener" class="primary light">Download Now</a>
+                    <a href="#" rel="noopener" class="secondary light ml-20">Learn More</a>
                 </div>
             </div>
         </div>
 
         <div class="hero-image">
             <div class="hero-image-wrapper">
-                <div class="hero-image-image"></div>
+                <!-- Setting the background image inline so we can update this from the dashboard in the future. -->
+                <div class="hero-image-image" style="background-image: url(<?= get_template_directory_uri() . '/assets/images/Device_Ipad.png' ?>)"></div>
                 <img src="<?= get_template_directory_uri() . '/assets/images/Device_Ipad.png' ?>" alt="iPad device with blank screen">
             </div>
         </div>

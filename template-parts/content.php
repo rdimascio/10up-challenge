@@ -1,5 +1,5 @@
 <?php
-
+    // Content section
 ?>
 
 <div class="content">
