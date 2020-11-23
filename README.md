@@ -18,6 +18,10 @@ Download the zipped template [here](https://drive.google.com/file/d/1NIBRUZQx0t-
 
 Upload and activate from the dashboard.
 
+## Setup
+
+In order for the menu to function as intended, you'll need to create a new menu in the `Header` layout position, and add the necessary pages to your menu.
+
 ## Todo
 
 Read `todo.md`
