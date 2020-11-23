@@ -1,0 +1,10 @@
+.footer {
+    background: #000;
+    
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $gutter-height / 2 0;
+    }
+}

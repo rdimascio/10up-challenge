@@ -2,9 +2,9 @@
 
 ?>
 
-        <footer>
-            <div class="footer-logo-wrapper">
-                <?php get_template_part('template-parts/10up-logo'); ?>
+        <footer class="footer">
+            <div class="footer-wrapper">
+                <?php get_template_part('template-parts/footer-logo'); ?>
             </div>
         </footer>
     </body>

@@ -1,0 +1,17 @@
+.content {
+    padding: $gutter-height * 2 $gutter-width;
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-body {
+        padding: $gutter-height $gutter-width $gutter-width $gutter-width * 2;
+
+        small {
+            color: #005df9;
+        }
+    }
+}

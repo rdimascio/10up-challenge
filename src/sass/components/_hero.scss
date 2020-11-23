@@ -5,49 +5,51 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: #FFF;
-        background: linear-gradient(#061525, #062541);
-    }
-
-    &-content-wrapper,
-    &-image-wrapper {
-        flex: 1;
+        color: $light;
+        background-image: linear-gradient($hero-gradient-start, $hero-gradient-end);
     }
 
     &-content {
+        flex: 1;
+        padding-left: $gutter-width;
+
         &-wrapper {
-            padding-left: 80px;
+            padding-top: $header-height + $gutter-height;
+            padding-right: $gutter-width;
+            padding-bottom: $gutter-height * 2;
+            padding-left: $gutter-width * 2;
         }
 
-        .title-prefix {
-            font-size: 12px;
-            color: #00ee9a;
+        small {
+            color: $eyebrow-green;
         }
 
-        h1 {
-
+        p {
+            margin-bottom: 2.5rem;
         }
     }
 
     &-buttons {
-        a {
-            text-decoration: none;
-            color: #FFF;
-
-            &:hover,
-            &:active,
-            &:visited {
-                text-decoration: none;
-                color: #FFF;
-            }
-        }
+        
     }
 
     &-image {
+        flex: 1;
+        padding-right: $gutter-width;
+        
         &-wrapper {
-            margin-bottom: -30px;
+
         }
 
-        background-image: url('../assets/images/Device_Ipad.png');
+        &-image {
+            background-image: url('../assets/images/Device_Ipad.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-bottom: 115%;
+        }
+
+        img {
+            display: none;
+        }
     }
 }

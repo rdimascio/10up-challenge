@@ -6,19 +6,20 @@
     <div class="hero-wrapper">
         <div class="hero-content">
             <div class="hero-content-wrapper">
-                <p class="title-prefix">Who we are</p>
-                <h1>Engage brand and increase viewability.</h1>
-                <p>Maecenas finibus urna a accumsan dapibus. Donec lobortis, neque vel vehicula dictum, dolor magna maximus ante, ac pulvinar sem leo quis sem.</p>
+                <small>Who we are</small>
+                <h1 class="mt-10">Engage brand and increase viewability.</h1>
+                <p>Maecenas finibus urna a accumsan dapibus. Donec lobortis, neque vel vehicula dictum.</p>
                 <div class="hero-buttons">
-                    <a href="/">Download Now</a>
-                    <a href="/">Learn More</a>
+                    <a class="btn light" href="/">Download Now</a>
+                    <a class="light ml-20" href="/">Learn More</a>
                 </div>
             </div>
         </div>
 
         <div class="hero-image">
             <div class="hero-image-wrapper">
-                <img src="<?= get_template_directory_uri() . '/assets/images/Device_Ipad.png' ?>" alt="">
+                <div class="hero-image-image"></div>
+                <img src="<?= get_template_directory_uri() . '/assets/images/Device_Ipad.png' ?>" alt="iPad device with blank screen">
             </div>
         </div>
     </div>
