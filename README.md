@@ -17,3 +17,7 @@ A custom WordPress theme without any starter templates or frameworks.
 Download the zipped template [here](https://)
 
 Upload and activate from the dashboard.
+
+## Todo
+
+Read `todo.md`
