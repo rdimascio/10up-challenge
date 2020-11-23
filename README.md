@@ -14,7 +14,7 @@ A custom WordPress theme without any starter templates or frameworks.
 
 ### Zip:
 
-Download the zipped template [here](https://)
+Download the zipped template [here](https://drive.google.com/file/d/1lU0x4rhdoHCmBynY7SjLwavr8VJKOh-j/view?usp=sharing)
 
 Upload and activate from the dashboard.
 
