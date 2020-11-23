@@ -39,14 +39,8 @@
         flex: 1;
         padding-right: $gutter-width;
 
-        &-image {
-            background-size: cover;
-            background-repeat: no-repeat;
-            padding-bottom: 115%;
-        }
-
         img {
-            display: none;
+            margin-bottom: -60px;
         }
     }
 }

@@ -1,8 +1,6 @@
 'use strict';
 
 (() => {
-    document.addEventListener('click', handleDocumentClick);
-
     document
         .getElementById('headerMenuIcon')
         .addEventListener('click', handleMenuIconClick);

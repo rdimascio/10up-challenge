@@ -6,11 +6,19 @@ h1, h2 {
 }
 
 h1 {
-    font-size: $hero-heading;
+    font-size: $hero-heading-mobile;
+
+    @media only screen and (min-width: 1269px) {
+        font-size: $hero-heading;
+    }
 }
 
 h2 {
-    font-size: $content-heading;
+    font-size: $content-heading-mobile;
+
+    @media only screen and (min-width: 1269px) {
+        font-size: $content-heading;
+    }
 }
 
 p {
@@ -23,9 +31,13 @@ p {
 p, a {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: $content;
+    font-size: $content-mobile;
     letter-spacing: .5px;
     line-height: 2;
+
+    @media only screen and (min-width: 1269px) {
+        font-size: $content;
+    }
 }
 
 small {
