@@ -11,7 +11,7 @@ h1, h2 {
 h1 {
     font-size: $hero-heading-mobile;
 
-    @media only screen and (min-width: 520px) {
+    @media only screen and (min-width: 580px) {
         font-size: $hero-heading-tablet;
     }
 
@@ -23,7 +23,7 @@ h1 {
 h2 {
     font-size: $content-heading-mobile;
 
-    @media only screen and (min-width: 520px) {
+    @media only screen and (min-width: 580px) {
         font-size: $content-heading-tablet;
     }
 
@@ -46,7 +46,7 @@ p, a {
     line-height: 2;
 
 
-    @media only screen and (min-width: 520px) {
+    @media only screen and (min-width: 580px) {
         font-size: $content-tablet;
     }
 
@@ -58,6 +58,14 @@ p, a {
 small {
     font-family: 'Cousine', monospace;
     font-weight: 700;
-    font-size: 20px;
+    font-size: $content-mobile;
     margin-bottom: 10px;
+
+    @media only screen and (min-width: 580px) {
+        font-size: $content-tablet;
+    }
+
+    @media only screen and (min-width: 1270px) {
+        font-size: $content;
+    }
 }
